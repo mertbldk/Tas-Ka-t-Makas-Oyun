@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taş - Kağıt - Makas Oyunu</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div id="container">
+    <div id="homegame">
+      <div id="scoretable">
+        <div id="player">
+          <div id="playername">Player 1</div>
+          <div id="playerbar">
+            <div id="bar" class="bar1"></div>
+          </div>
+        </div>
+        <div id="player">
+          <div id="playername">Player 2</div>
+          <div id="playerbar">
+            <div id="bar" class="bar2"></div>
+          </div>
+        </div>
+      </div>
+      <div id="gameplay">
+        <div id="player1">
+          <div id="imgcap">
+            <img id="markimg" src="./Img/taş.png">
+          </div>
+          <div id="select">
+            <button id="mark" data-name="kağıt"><img src="./Img/kağıt.png" alt="KAĞIT"></button>
+            <button id="mark" data-name="taş"><img src="./Img/taş.png" alt="TAŞ"></button>
+            <button id="mark" data-name="makas"><img src="./Img/makas.png" alt="MAKAS"></button>
+          </div>
+        </div>
+        <div id="player2">
+          <img id="markimg" src="./Img/taş.png">
+        </div>
+      </div>
+    </div>
+    <div id="popupcap">
+      <div id="popup">
+        <div id="popuptitle">TAŞ - KAĞIT - MAKAS OYUNU</div>
+        <ul>
+          <li>5 haktan oluşuyor.</li>
+          <li>İlk elini kırdıran kaybeder.</li>
+          <li>Ekrandaki yumruk taşı, 5 parmak kağıdı ve 2 parmak ise makası temsil ediyor.</li>
+          <li>Taş ile makas karşılaştığında TAŞ YENER.</li>
+          <li>Kağıt ile taş karşılaştığında KAĞIT YENER.</li>
+          <li>Makas ile kağıt karşılaştığında MAKAS YENER.</li>
+        </ul>
+        <button id="play">Başla</button>
+      </div>
+    </div>
+  </div>
+  <script src="./javascript.js"></script>
+</body>
+</html>
